@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatin K Sanjeev | Senior Flutter Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#121212',
+                        lightDark: '#1E1E1E',
+                        accent: '#00C6FF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <header class="bg-lightDark text-center p-6 shadow-lg">
+        <h1 class="text-4xl font-bold text-accent">Yatin K Sanjeev</h1>
+        <p class="text-lg">Senior Flutter Developer</p>
+    </header>
+    
+    <section id="about" class="max-w-4xl mx-auto p-6 fade-in">
+        <h2 class="text-3xl font-semibold mb-4 text-accent">About Me</h2>
+        <p class="text-gray-400">Experienced Senior Flutter Developer with over 3 years in the industry, specializing in designing, developing, and publishing cross-platform mobile and web applications. Successfully delivered 10+ apps for iOS, Android, and Web, demonstrating expertise in state management (Bloc, Provider), advanced animations, and developing native packages using method channels.</p>
+    </section>
+    
+    <section id="skills" class="bg-lightDark shadow-md max-w-4xl mx-auto p-6 rounded-lg mt-6 fade-in">
+        <h2 class="text-3xl font-semibold mb-4 text-accent">Skills</h2>
+        <ul class="grid grid-cols-2 gap-4 text-gray-300">
+            <li>Flutter & Dart</li>
+            <li>Node.js & TypeScript</li>
+            <li>Bloc & Provider</li>
+            <li>Firebase & RESTful APIs</li>
+            <li>GraphQL</li>
+            <li>Android Studio & Xcode</li>
+            <li>Git & CI/CD</li>
+            <li>Web & Mobile Deployment</li>
+        </ul>
+    </section>
+    
+    <section id="projects" class="max-w-4xl mx-auto p-6 mt-6 fade-in">
+        <h2 class="text-3xl font-semibold mb-4 text-accent">Key Projects</h2>
+        <div class="bg-lightDark shadow-md p-4 rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-accent">WINLUCKS</h3>
+            <p class="text-gray-300">A shopping and giveaway run app for merchants and users. Published separate merchant and user apps.</p>
+        </div>
+        <div class="bg-lightDark shadow-md p-4 rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-accent">HLM (HELP LIKE MONK)</h3>
+            <p class="text-gray-300">A service management app similar to Jira, used in repair centers to manage customers, track repair statuses, and provide updates.</p>
+        </div>
+        <div class="bg-lightDark shadow-md p-4 rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-accent">DERMAZONE</h3>
+            <p class="text-gray-300">A doctor booking app for UAE users, allowing them to browse doctors, hospitals, and healthcare services.</p>
+        </div>
+        <div class="bg-lightDark shadow-md p-4 rounded-lg">
+            <h3 class="text-2xl font-semibold text-accent">OWLETO</h3>
+            <p class="text-gray-300">A comprehensive food delivery app with separate modules for users, merchants, and delivery personnel.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="bg-lightDark text-center p-6 mt-6 fade-in">
+        <h2 class="text-3xl font-semibold text-accent">Contact</h2>
+        <p class="text-gray-300">Phone: +91 6238584124</p>
+        <p class="text-gray-300">Email: yatinksan@gmail.com</p>
+        <p>Website: <a href="http://www.yatinksan.com" class="text-accent underline">www.yatinksan.com</a></p>
+        <p>GitHub: <a href="https://github.com/yatinksan" class="text-accent underline">github.com/yatinksan</a></p>
+    </section>
+    
+    <footer class="text-center p-4 text-gray-400 mt-6">
+        <p>&copy; 2025 Yatin K Sanjeev | Senior Flutter Developer</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeIns = document.querySelectorAll(".fade-in");
+            fadeIns.forEach((el) => {
+                setTimeout(() => {
+                    el.classList.add("show");
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
